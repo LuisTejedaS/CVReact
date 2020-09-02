@@ -39,21 +39,19 @@ class App extends Component {
     return (
       <div>
         <Navbar></Navbar>
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={(props) => (
-              <HomePage {...props} person={person} isAuthed={true} />
-            )}
-          />
-          <Route
-            path="/about"
-            render={(props) => (
-              <AboutPage {...props} person={person} isAuthed={true} />
-            )}
-          />
-        </Switch>
+        <Route
+          exact
+          path="/"
+          render={(props) => (
+            <HomePage {...props} person={person} isAuthed={true} />
+          )}
+        />
+        <Route
+          path="/about"
+          render={(props) => (
+            <AboutPage {...props} person={person} isAuthed={true} />
+          )}
+        />
       </div>
     );
   }
