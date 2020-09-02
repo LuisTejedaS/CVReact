@@ -1,0 +1,25 @@
+.navbar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  margin-top: 80px;
+  align-items: center;
+  margin-left: 750px;
+}
+.navbarelement {
+  float: left;
+  margin: 25px;
+  cursor: pointer;
+}
+
+.navbarelement label {
+  cursor: pointer;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.navbar ul {
+  list-style: none;
+}
