@@ -39,19 +39,21 @@ class App extends Component {
     return (
       <div>
         <Navbar></Navbar>
-        <Route
-          exact
-          path="/"
-          render={(props) => (
-            <HomePage {...props} person={person} isAuthed={true} />
-          )}
-        />
-        <Route
-          path="/about"
-          render={(props) => (
-            <AboutPage {...props} person={person} isAuthed={true} />
-          )}
-        />
+        <Switch>
+          <Route
+            exact
+            path="/CVReact/"
+            render={(props) => (
+              <HomePage {...props} person={person} isAuthed={true} />
+            )}
+          />
+          <Route
+            path="/CVReact/about"
+            render={(props) => (
+              <AboutPage {...props} person={person} isAuthed={true} />
+            )}
+          />
+        </Switch>
       </div>
     );
   }

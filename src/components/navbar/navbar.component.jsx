@@ -6,10 +6,10 @@ const Navbar = ({ history }) => (
   <div className="navbar">
     <ul>
       <li className="navbarelement">
-        <label onClick={() => history.push("/")}>Home</label>
+        <label onClick={() => history.push("/CVReact/")}>Home</label>
       </li>
       <li className="navbarelement">
-        <label onClick={() => history.push("/about")}>About me</label>
+        <label onClick={() => history.push("/CVReact/about")}>About me</label>
       </li>
     </ul>
   </div>
